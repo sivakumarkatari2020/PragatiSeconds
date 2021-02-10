@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragati Seconds Home page</title>
+    <link rel="stylesheet" href="pragatiSeconds-homepage-styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6b4c41698.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="top-bar">
+            <div id="open-sidebar" onclick="openSideBar()">
+                <script>
+                    function openSideBar(){
+                        let sb = document.querySelector('nav');
+                        sb.style.display = "block";
+                        sb.style.position = "fixed";
+                    }
+                </script>
+                <div id="hamburger-symbol">
+                    <p>&#9776</p>
+                </div>
+            </div>
+            <div id="search-bar">
+                <input type="text" name="search-box" id="search-box" placeholder="Search items">
+                <div id="search-icon" onclick="searchItems()">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div id="user-login" onclick="popUpLoginform()">
+                <button>login</button>
+            </div>
+        </div>
+        <div id="main-header">
+            <center><h1>PragatiSeconds.com</h1></center>
+            <center><h5>save your money!</h5></center>
+        </div>
+        <nav>
+            <div id="cls-sidebar" onclick="closeSideBar()">
+                <div id="cross-symbol">
+                    <center><p>&times;</p></center>
+                </div>
+                <script>
+                    function closeSideBar(){
+                        let sb = document.querySelector('nav');
+                        sb.style.display = "none";
+                    }
+                </script>
+            </div>
+            <div id="navigation-contents">
+                <ul>
+                    <li><a href="pragatiSeconds-homepage.html">Home Page</a></li>
+                    <li><a href="">Your Account</a></li>
+                    <li><a href="">Books</a></li>
+                    <li><a href="">Drafters</a></li>
+                    <li><a href="">Casio (calci)</a></li>
+                    <li><a href="">Others</a></li>
+                    <li><a href="">Customer service</a></li>
+                    <li><a href="">Review/Report</a></li>
+                    <li><a href="">login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="product-list">
+            <a href=""><div id="books" onclick="product('books')" style="background-image: url('books.jpg');">
+                <div id="content">
+                    <p>Books</p>
+                </div>
+            </div></a>
+            <a href=""><div id="drafters" onclick="product('drafters')" style="background-image: url('drafterPS.jpg');">
+                <div id="content">
+                    <p>Drafters</p>
+                </div>
+            </div></a>
+            <a href=""><div id="casio" onclick="product('casio')" style="background-image: url('calciPS.jpg');">
+                <div id="content">
+                    <p>Casio(calci)</p>
+                </div>
+            </div></a>
+            <a href=""><div id="others" onclick="product('others')">
+                <div id="content">
+                    <p>Others</p>
+                </div>
+            </div></a>
+        </div>
+    </main>
+    <footer>
+        <div id="link-to-top">
+            <center><a href="#top-bar"><p>Go to top</p></a></center>
+        </div>
+        <div id="page-footer-description">
+            <div>
+            <a href="">About us</a><br>
+            <a href="">Your orders</a><br>
+            </div>
+            <div>
+            <a href="">Your Account</a><br>
+            <a href="">Products</a>
+            </div>
+        </div>
+        <div id="bottom-of-page">
+            <a href="">Conditions of Use</a>
+            <a href="">Privacy Notice</a>
+        </div>
+    </footer>
+</body>
+</html>

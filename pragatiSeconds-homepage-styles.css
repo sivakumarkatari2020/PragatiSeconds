@@ -1,0 +1,255 @@
+@media only screen and (max-width:768px){
+*{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: #4664a5;
+    color: #ffffff;
+}
+header #top-bar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+header #top-bar #open-sidebar{
+    width: 30px;
+    height: 30px;
+    border: solid 2px white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+header #top-bar #open-sidebar #hamburger-symbol{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+}
+header #top-bar #search-bar{
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    flex-flow: row;
+}
+header #top-bar #search-bar #search-box{
+    width: 150px;
+    height: 30px;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    border: 2px solid #4664a5;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+}
+header #top-bar #search-bar #search-icon{
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    background-color: #4664a5;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px;
+    display: flex;
+}
+header #top-bar #search-bar #search-icon i{
+    font-size: 20px;
+    margin: auto;
+}
+header #top-bar #user-login{
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+header #top-bar #user-login button{
+    padding: 5px;
+    font-size: 18px;
+    background-color: #4664a5;
+    border: solid 2px #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+}
+header #main-header{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+header #main-header h1{
+    font-size: 2.5em;
+    letter-spacing: -2px;
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 10px;
+    margin-bottom: 0;
+}
+header #main-header h5{
+    font-size: 1.5em;
+    letter-spacing: -2px;
+    padding: 10px;
+    padding-top: 0;
+    margin: 10px;
+    margin-top: 0;
+}
+header nav{
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 1px 0px 10px black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+header nav #cls-sidebar{
+    width: 100%;
+    height:  50px;
+    color: black;
+    z-index: 999;
+}
+header nav #cls-sidebar #cross-symbol{
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: solid 2px #4664a5;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    float: right;
+}
+header nav #cls-sidebar #cross-symbol p{
+    color: #4664a5;
+    font-size: 24px;
+}
+header nav  #navigation-contents{
+    width: 100%;
+    height: auto;
+    color: black;
+    text-decoration: none;
+}
+header nav #navigation-contents ul{
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+    padding-top: 30px;
+    margin: auto;
+}
+
+header nav #navigation-contents li{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(224, 218, 218);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+header nav #navigation-contents ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    color: #000000;
+    z-index: 1;
+}
+main #product-list{
+    width: 80%;
+    height: auto;
+    display: grid;
+}
+main #product-list a{
+    text-decoration: none;
+}
+main #product-list #books,#drafters,#casio,#others{
+    width: 90%;
+    height: 200px;
+    background-color: rgb(224, 218, 218);
+    border-radius: 10px;
+    box-shadow: 2px 2px 25px rgb(224, 218, 218);
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+main #product-list p{
+    font-size: 44px;
+    color: #000000;
+    opacity: 1;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #4664a5;
+    z-index: 1;
+}
+footer a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+footer #link-to-top{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    background-color:#40537c;
+}
+footer #link-to-top p{
+    margin: auto;
+}
+footer #page-footer-description{
+    font-size:18px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+footer #page-footer-description div{
+    margin: 5px;
+}
+footer #page-footer-description a{
+    margin: 10px;
+}
+footer #bottom-of-page{
+    width: 100%;
+    height: auto;
+    background-color: #40537c;
+    display: flex;
+    justify-content: center;
+}
+footer #bottom-of-page a{
+    color: black;
+    margin: 5px;
+    font-size: 16px;
+}
+}
