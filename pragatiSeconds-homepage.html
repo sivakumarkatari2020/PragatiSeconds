@@ -26,6 +26,12 @@
             </div>
             <div id="user-login" onclick="popUpLoginform()">
                 <button>login</button>
+                <script>
+                    function popUpLoginform(){
+                        let PUform = document.getElementById("popup-login-form");
+                        PUform.style.display = "flex";
+                    }
+                </script>
             </div>
         </div>
         <center>
@@ -109,5 +115,26 @@
             <a href="">Privacy Notice</a>
         </div>
     </footer>
+    <div id="popup-login-form">
+        <div id="popup-login-frame">
+            <p onclick="clsLoginForm()">&times;</p>
+            <script>
+                function clsLoginForm(){
+                let PUform = document.getElementById("popup-login-form");
+                PUform.style.display = "none";
+                }
+            </script>
+            <h1>Login</h1>
+            <div id="inpElements">
+                <input type="email" name="inpName" id="inpName" placeholder="mail Id"><br>
+                <input type="password" name="inpPass" id="inpPass" placeholder="password"><br>
+                <button type="submit" value="" onclick="userLogInPS()">Login</button><br>
+            </div>
+            <div id="popup-links">
+                <center><a href="">Forgot Password?</a></center>
+                <center><a href="">newUser?signup?</a></center>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

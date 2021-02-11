@@ -267,3 +267,88 @@ footer #bottom-of-page a{
     margin: 5px;
     font-size: 12px;
 }
+#popup-login-form{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+#popup-login-form #popup-login-frame{
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px 10px 1px #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 10px;
+}
+#popup-login-form #popup-login-frame p{
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    border: solid 2px rgb(177, 174, 174);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#popup-login-frame h1{
+    font-size: 48px;
+    color: rgb(177, 174, 174);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+#popup-login-frame #inpName,#inpPass{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: solid 4px rgb(177, 174, 174);
+    background-color: rgb(224, 218, 218);
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px;
+}
+#popup-login-frame button{
+    width: 100px;
+    height: 30px;
+    padding: 15px;
+    background-color: #4664a5;
+    border: solid 4px #40537c;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#popup-login-frame  #popup-links{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#popup-login-frame  #popup-links a{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
