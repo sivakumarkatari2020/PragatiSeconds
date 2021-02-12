@@ -65,7 +65,7 @@
                     <li><a href="">Drafters</a></li>
                     <li><a href="">Casio (calci)</a></li>
                     <li><a href="">Others</a></li>
-                    <li><a href="">Customer service</a></li>
+                    <li><a href="pragatiSeconds-customerService.html">Customer service</a></li>
                     <li><a href="">Review/Report</a></li>
                     <li><a href="">login</a></li>
                 </ul>
@@ -122,12 +122,45 @@
                 function clsLoginForm(){
                 let PUform = document.getElementById("popup-login-form");
                 PUform.style.display = "none";
+                let inp1 = document.getElementById('inpName');
+                inp1.innerText = '';
+                inp1.innerHTML = '';
+                inp1.value = '';
+                let inp2 = document.getElementById('inpPass');
+                inp2.innerText = '';
+                inp2.value = '';
+                let show = document.getElementById('show-password-field-loginpage');
+                if(show.style.backgroundColor == 'rgb(224,218,218)'){
+                    show.style.backgroundColor = '#4664a5';
+                    show.style.color = '#ffffff'
+                }
+                else{
+                    show.style.backgroundColor = 'rgb(224,218,218)';
+                    show.style.color = '#4664a5'
+                }                     
                 }
             </script>
             <h1>Login</h1>
             <div id="inpElements">
                 <input type="email" name="inpName" id="inpName" placeholder="mail Id"><br>
-                <input type="password" name="inpPass" id="inpPass" placeholder="password"><br>
+                <div id="passwordField">
+                <input type="password" name="inpPass" id="inpPass" placeholder="password">
+                <p onclick="showPasswordOfLogin()" id="show-password-field-loginpage">show</p>
+                <script>
+                    function showPasswordOfLogin(){
+                        let pass = document.getElementById('inpPass');
+                        let show = document.getElementById('show-password-field-loginpage');
+                        if(pass.type == 'password'){pass.type = 'text';show.style.backgroundColor = '#4664a5';
+                        show.style.color = '#ffffff'
+                        }
+                        else{pass.type ='password';
+                        show.style.backgroundColor = 'rgb(224,218,218)';
+                        show.style.color = '#4664a5'
+                        }                        
+                    }
+                </script>
+                <br>
+                </div>
                 <button type="submit" value="" onclick="userLogInPS()">Login</button><br>
             </div>
             <div id="popup-links">

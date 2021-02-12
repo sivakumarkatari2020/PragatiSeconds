@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service PS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6b4c41698.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            font-family: 'Nunito', roboto;
+            background-color: #ffffff;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            padding: 0%;
+            margin: 0%;
+        }
+        #customer-service-page{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+        }
+        #header-customer-services{
+            width: 100%;
+            height: 300px;
+            font-size: 3em;
+            margin: 0;
+            margin-bottom: 20px;
+            color: #ffffff;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #4664a5;
+        }
+        #header-customer-services h1{
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+            background-color: #4664a5;
+        }
+        #header-customer-services p{
+            font-size: 0.7em;
+            background-color: #4664a5;
+        }
+        #customer-service-page dl{
+            width: 90%;
+            height: auto;
+        
+        }
+        dl > dt{
+            width: 90%;
+            height: auto;
+            padding: 10px;
+            font-size: 20px;
+        }
+        dl > dd{
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        dl div{
+            height: 40px;
+            overflow: hidden;
+        }
+        dl  h5{
+            font-size: 18px;
+            padding: 10px;
+            background-color: rgb(224, 218, 218);
+        }
+        dl p{
+            font-size: 16px;
+            padding: 10px;
+        }
+        #home-page-tooltip{
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 80%;
+            left: 80%;
+            border-radius: 50%;
+            background-color: #4664a5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #home-page-tooltip i{
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            background-color: #4664a5;
+        } 
+        #bottom-spacer{
+            width: 100%;
+            height: 200px;
+            background-color: #ffffff;
+        }
+        </style>
+</head>
+<body>
+    <div id="customer-service-page">
+        <div id="header-customer-services">
+        <center><h1>Do you need any Help ?</h1></center><br>
+        <p>customer services</p>
+        </div>
+        <dl>
+            <dt>Quick queries : </dt>
+            <dd><div onclick="openOne()" id="one">
+                <h5>How to order?</h5>
+                <p>Open our site with <a href="">pragatiseconds.com</a> url and then search for item what you need in search bar on our home page then you will direct to your searching item.Then compare and click on make order button your wished product.</p>
+            </div></dd>
+            <dd><div onclick="openTwo()" id="two">
+                <h5>How to create account?</h5>
+                <p>Go to home page of our site <a href="">pragatiseconds.com</a> and you can see a login button on the top right corner you just click on that and then a login form appears then go for <a href="">new user?sign up?</a> link then create a new account with your mail Id.</p>
+            </div></dd>
+            <dd><div onclick="openThree()" id="three">
+                <h5>How to update profile/details?</h5>
+                <p>First login with your registered account then go to your account then click on update profile button.</p>
+            </div></dd>
+            <dd><div onclick="openFour()" id="four">
+                <h5>How to sell products?</h5>
+                <p>Pragati seconds website is mainly for promoting the use of second handled things,so for selling your things just create an account on our page then go to your profile and then tap sell button on your window,then upload your product photos and fix a price after finishing just tap upload button on window.</p>
+            </div></dd>
+            <dd><div onclick="openFive()" id="five">
+                <h5>How to check my products?</h5>
+                <p>Simply go to your home page and go to bottom of your page then click <a href="">Your products</a> link present on your window.</p>
+            </div></dd>
+            <dd><div onclick="openSix()" id="six">
+                <h5>What if I have breakage or any issues to my ordered product?</h5>
+                <p>This is a site for connecting both customers and sellers so that no one can deliver your product you have to take the product from seller.So please check once you recieved your product and we an attach seller details with your product so contact them.The site have no responsibility for any breaking or money issue this is only a interface between seller and buyer.</p>
+            </div></dd>
+            <dd><div onclick="openSeven()" id="seven">
+                <h5>Still you have queries?</h5>
+                <p>You can contact us from the provided link on your navigation menu or <a href="mailto:sivakumarkatari2556@gmail.com">mail us.</a></p>
+            </div></dd>
+        </dl>
+    </div>
+    <div id="bottom-spacer"></div>
+    <div id="home-page-tooltip"><a href="pragatiSeconds-homepage.html"><i class="fas fa-home"></i></a></div>
+    <script>
+        function openOne(){
+            let box = document.getElementById('one');
+            if(box.style.height == 'auto'){box.style.height = '40px'}
+            else{box.style.height = 'auto'}
+        }
+        function openTwo(){
+            let box = document.getElementById('two');
+            if(box.style.height == 'auto'){box.style.height = '40px'}
+            else{box.style.height = 'auto'}
+        }      
+        function openThree(){
+            let box = document.getElementById('three');
+            if(box.style.height == 'auto'){box.style.height = '40px'}
+            else{box.style.height = 'auto'}
+        }
+        function openFour(){
+            let box = document.getElementById('four');
+            if(box.style.height == 'auto'){box.style.height = '40px'}
+            else{box.style.height = 'auto'}
+        }
+        function openFive(){
+            let box = document.getElementById('five');
+            if(box.style.height == 'auto'){box.style.height = '40px'}
+            else{box.style.height = 'auto'}
+        }
+        function openSix(){
+            let box = document.getElementById('six');
+            if(box.style.height == 'auto'){box.style.height = '40px'}
+            else{box.style.height = 'auto'}
+        }     
+        function openSeven(){
+            let box = document.getElementById('seven');
+            if(box.style.height == 'auto'){box.style.height = '40px'}
+            else{box.style.height = 'auto'}
+        }
+    </script>
+</body>
+</html>

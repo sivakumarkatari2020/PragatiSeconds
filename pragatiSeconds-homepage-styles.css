@@ -315,8 +315,33 @@ footer #bottom-of-page a{
     border: solid 4px rgb(177, 174, 174);
     background-color: rgb(224, 218, 218);
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 14px;
     margin: 10px;
+}
+#popup-login-frame #inpPass{
+    width: 160px;
+    margin-right: 0;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#popup-login-frame #passwordField {
+    display: flex;
+}
+#popup-login-frame #passwordField p{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: solid 4px rgb(177, 174, 174);
+    border-left: none;
+    font-size: 12px;
+    background-color: rgb(224, 218, 218);
+    color: #4664a5;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 0;
 }
 #popup-login-frame button{
     width: 100px;
