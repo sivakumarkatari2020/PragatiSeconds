@@ -175,6 +175,7 @@ header nav #navigation-contents li{
     border-radius: 5px;
     display: flex;
     justify-content: center;
+    font-size: 18px;
 }
 
 header nav #navigation-contents ul li a{

@@ -77,10 +77,13 @@
             font-size: 18px;
             padding: 10px;
             background-color: rgb(224, 218, 218);
+            color: rgb(102, 96, 96);
         }
         dl p{
             font-size: 16px;
             padding: 10px;
+            word-spacing: 2px;
+            line-height: 120%;
         }
         #home-page-tooltip{
             width: 50px;
@@ -100,6 +103,12 @@
             text-decoration: none;
             background-color: #4664a5;
         } 
+        #home-page-tooltip p{
+            color: white;
+            text-decoration: none;
+            background-color: #4664a5;
+            font-size: 14px;
+        }
         #bottom-spacer{
             width: 100%;
             height: 200px;
@@ -117,11 +126,11 @@
             <dt>Quick queries : </dt>
             <dd><div onclick="openOne()" id="one">
                 <h5>How to order?</h5>
-                <p>Open our site with <a href="">pragatiseconds.com</a> url and then search for item what you need in search bar on our home page then you will direct to your searching item.Then compare and click on make order button your wished product.</p>
+                <p>Open our site with <a href="pragatiSeconds-homepage.html">pragatiseconds.com</a> url and then search for item what you need in search bar on our home page then you will direct to your searching item.Then compare and click on make order button your wished product.</p>
             </div></dd>
             <dd><div onclick="openTwo()" id="two">
                 <h5>How to create account?</h5>
-                <p>Go to home page of our site <a href="">pragatiseconds.com</a> and you can see a login button on the top right corner you just click on that and then a login form appears then go for <a href="">new user?sign up?</a> link then create a new account with your mail Id.</p>
+                <p>Go to home page of our site <a href="pragatiSeconds-homepage.html">pragatiseconds.com</a> and you can see a login button on the top right corner you just click on that and then a login form appears then go for <a href="pragatiSeconds-signuppage.html">new user?sign up?</a> link then create a new account with your mail Id.</p>
             </div></dd>
             <dd><div onclick="openThree()" id="three">
                 <h5>How to update profile/details?</h5>
@@ -146,7 +155,7 @@
         </dl>
     </div>
     <div id="bottom-spacer"></div>
-    <div id="home-page-tooltip"><a href="pragatiSeconds-homepage.html"><i class="fas fa-home"></i></a></div>
+    <div id="home-page-tooltip"><a href="pragatiSeconds-homepage.html"><p>home</p><i class="fas fa-home"></i></a></div>
     <script>
         function openOne(){
             let box = document.getElementById('one');

@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+header{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4664a5;
+    color: #fff;
+}
+header h1{
+    padding: 5px;
+    margin: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+header h5{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+main form{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+main input{
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 4px solid rgb(177,174,174);
+    background-color: rgb(224,218,218);
+    font-size: 14px;
+    color: rgb(102, 96, 96);
+}
+#mailForm{
+    display: flex;
+    flex-flow: column;
+}
+#mailForm #mailButtonBox{
+    width: 95%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+#mailForm #button{
+    width: 100px;
+    height: 40px;
+    padding: 2px;
+    color: #fff;
+    background-color: #4664a5;
+    border: 4px solid #40537c;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#checkBoxTerms{
+    width: 250px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#checkBoxTerms input{
+    width: 100px;
+    height: 30px;
+}
+#checkBoxTerms p,a{
+    font-size: 14px;
+    word-spacing: 1px;
+    line-height: 100%;
+    
+}
+#actionButtons{
+    width: 250px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#actionButtons button{
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 4px #40537c;
+    background-color: #4664a5;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+#home-page-tooltip{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    border-radius: 50%;
+    background-color: #4664a5;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 999;
+}
+#home-page-tooltip i{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #4664a5;
+} 
+#home-page-tooltip p{
+    color: white;
+    text-decoration: none;
+    background-color: #4664a5;
+    font-size: 14px;
+}
+#popup-email-verification-form{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#popup-email-verification-form-contents{
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    padding: 5px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 50px 1px rgb(177,174,174);
+}
+#popup-email-verification-form-contents h2{
+    font-size: 34px;
+    color: #40537c;
+    font-weight: 900;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#popup-email-verification-form-contents p{
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#clsPopUp{
+    width: 25px;
+    height: 25px;
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 10px;
+}
+#popup-email-verification-form-contents label p{
+    font-size: 14px;
+    margin: 5px;
+}
+#popup-email-verification-form-contents label input{
+    width: 100px;
+    margin-bottom: 20px;
+}
+#popup-email-verification-form-contents label button{
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    border: solid 4px #40537c;
+    background-color: #4664a5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+

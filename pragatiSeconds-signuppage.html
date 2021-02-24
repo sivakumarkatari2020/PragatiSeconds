@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup into PragatiSeconds.com</title>
+    <link rel="stylesheet" href="pragatiSeconds-signuppage-styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6b4c41698.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="main-header">
+        <h1>welcome</h1>
+        <h5>PragatiSeconds.com</h5>
+        <h5>Do you want to sign up?</h5>
+        <h5>Fill the details</h5>
+        </div>
+    </header>
+    <main>
+        <form action="" method="post">
+            <label for="inpSignupName">
+            <input type="text" name="inpSignupName" id="inpSignupName" 
+            placeholder="Enter name">
+            </label>
+            <label for="inpSignupId">
+                <input type="text" name="inpSignupId" id="inpSignupId" 
+                placeholder="Enter college id">
+            </label>
+            <label for="inpSignupMailId">
+                <div id="mailForm">
+                <input type="email" name="inpSignupMailId" id="inpSignupMailId" 
+                placeholder="Enter your email">
+                <div id="mailButtonBox">
+                    <p></p>
+                    <div id="button" onclick="popUpMailVerificationForm()">verify</div>
+                    <!--popup email varification form-->
+                    <script>
+                        function popUpMailVerificationForm(){
+                            let popUp = document.getElementById('popup-email-verification-form');
+                                popUp.style.display = 'flex';
+                        }
+                    </script>
+                </div>
+                </div>
+                <div id="popup-email-verification-form">
+                    <div id="popup-email-verification-form-contents">
+                        <p id="clsPopUp" onclick="clsPopUpForm()">&times;</p>
+                        <!--script to close the pop up verification form-->
+                        <script>
+                            function clsPopUpForm(){
+                                let popUp = document.getElementById('popup-email-verification-form');
+                                popUp.style.display = 'none';
+                            }
+                        </script>
+                        <h2>verify your mail-id</h2>
+                        <p>we have sent you a verification code to the provided mail-Id.Kindly check your inbox or spam folder in your Gmail.</p>
+                        <label for="popupMailForm">
+                            <p>Enter your code : </p>
+                            <input type="text" id="popupMailForm" name="popupMailForm">
+                            <button type="submit">ok</button>
+                        </label>
+                    </div>
+                </div>
+            </label>
+            <label for="inpSignupPass">
+                <input type="password" name="inpSignupPass" id="inpSignupPass" placeholder="Create Password" disabled onclick="isVerifiedMail()">
+            </label>
+            <div id="checkBoxTerms">
+            <input type="checkbox" name="inpSignupCheckBox" id="inpSignupCheckBox" onclick="check()">
+            <p>I aware of <a href="">Conditions of use</a> and <a href="">Privacy terms</a> of this site.</p>
+            </div>
+            <script>
+                //function for changing submit button state to normal.
+                function check(){
+                let ckBox = document.getElementById('inpSignupCheckBox').checked;
+                let signupName = document.getElementById('inpSignupName').value;
+                let signupMail = emailValidate();
+                let colId = document.getElementById('inpSignupId').value;
+                if(ckBox&&signupName.length>1&&signupMail&&colId.length==10){
+                    let submitBut = document.getElementById('signupSubmitBut');
+                    submitBut.removeAttribute('disabled');
+                    submitBut.style.opacity = '1.0';
+                }
+
+                //function for validating provided user mail address
+                function emailValidate(){
+                    let mail = document.getElementById('inpSignupMailId').value;
+                    if(/^$/.test(mail)){
+                        return true;
+                    }
+                }
+            }
+            </script>
+            <div id="actionButtons">
+            <button type="reset">reset</button>
+            <button type="submit" onclick="accountCreatedPopup()" disabled id="signupSubmitBut" style="opacity: 0.5;">submit</button>
+            <script>
+                function accountCreatedPopup(){
+                    alert('Your account is created.\nThanks for creating an account\nGo to login page')
+                }
+            </script>
+            </div>
+        </form>
+    <div id="home-page-tooltip"><a href="pragatiSeconds-homepage.html"><p>home</p><i class="fas fa-home"></i></a></div>
+    </main>
+    <footer></footer>
+</body>
+</html>
