@@ -1,0 +1,19 @@
+{
+  "name": "pragatiseconds",
+  "version": "1.0.0",
+  "description": "\"this is an two side e-commerce website for pragti engineeering student to buy or sell ssecond handled products\"",
+  "main": "mainScriptFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivakumarkatari2020/PragatiSeconds.git"
+  },
+  "author": "\"Siva kumar Katari\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sivakumarkatari2020/PragatiSeconds/issues"
+  },
+  "homepage": "https://github.com/sivakumarkatari2020/PragatiSeconds#readme"
+}
