@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/sivakumarkatari2020/PragatiSeconds/issues"
   },
-  "homepage": "https://github.com/sivakumarkatari2020/PragatiSeconds#readme"
+  "homepage": "https://github.com/sivakumarkatari2020/PragatiSeconds#pragatiSeconds-homepage.html",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }
